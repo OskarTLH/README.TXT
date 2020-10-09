@@ -1,29 +1,29 @@
 // Lommeregner
-function vis_resultat(valg) {
-    var number1 = parseFloat(document.getElementById(num1).value);
-    var number2 = parseFloat(document.getElementById(num2).value);
-    var resultat;
-    var v = valg;
+function showres(choice) {
+    var n1 = parseFloat(document.getElementById("num1").value);
+    var n2 = parseFloat(document.getElementById("num2").value);
+    var r;
+    var c = choice;
 
     //switch statement giver en mulighed for at vælge en af mange blocks af kode som skal udføres
-    switch (v) {
-        valg "1":
-            resultat = number1 + number2;
+    switch(c) {
+        case '1':
+            r=n1+n2;
         break;
-        valg "2":
-            resultat = number1 - number2;
+        case '2':
+            r=n1-n2;
         break;
-        valg "3":
-            resultat = number1 * number2;
+        case '3':
+            r=n1*n2;
         break;
-        valg "4":
-            resultat = number1 / number2;
+        case '4':
+            r=n1/n2;
         break;
-        valg "5":
-            resultat = number2*100/number1;
+        case '5':
+            r=n2*100/n1;
         break;
         default:
         break;
     }
-    document.getElementById("resultat").value = resultat;
+    document.getElementById("resultat").value = r;
 }
